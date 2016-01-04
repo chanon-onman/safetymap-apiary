@@ -5,9 +5,9 @@ HOST: http://polls.apiblueprint.org/
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Accident on map [/accident_on_map]
+## Accident [/accident_on_map]
 
-### Get accident on map [POST]
+### Get accidents on map [POST]
 
 + Request (application/json)
 
@@ -1180,6 +1180,65 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                 }
             ]
 
+## Petition [/petition_type]
+
+### Get petitions [POST]
+
++ Request (application/json)
+
+        {
+        }
+
++ Response 200 (application/json)
+
+    + Headers
+
+            Location: /petition_type
+
+    + Body
+        
+            [
+                {
+                    "petition_type_id": 1,
+                    "petition_type_name": "ประเภทร้องเรียนที่ 1",
+                    "create_date": "2015-10-27T07:19:17.000Z",
+                    "update_date": "2015-10-27T07:19:17.000Z",
+                    "update_by": null,
+                    "desc_detail_update": null
+                },
+                {
+                    "petition_type_id": 2,
+                    "petition_type_name": "ประเภทร้องเรียนที่ 2",
+                    "create_date": "2015-10-27T07:19:17.000Z",
+                    "update_date": "2015-10-27T07:19:17.000Z",
+                    "update_by": null,
+                    "desc_detail_update": null
+                },
+                {
+                    "petition_type_id": 3,
+                    "petition_type_name": "ประเภทร้องเรียนที่ 3",
+                    "create_date": "2015-10-27T07:19:17.000Z",
+                    "update_date": "2015-10-27T07:19:17.000Z",
+                    "update_by": null,
+                    "desc_detail_update": null
+                },
+                {
+                    "petition_type_id": 4,
+                    "petition_type_name": "ประเภทร้องเรียนที่ 4",
+                    "create_date": "2015-10-27T07:19:17.000Z",
+                    "update_date": "2015-10-27T07:19:17.000Z",
+                    "update_by": null,
+                    "desc_detail_update": null
+                },
+                {
+                    "petition_type_id": 5,
+                    "petition_type_name": "ประเภทร้องเรียนที่ 5",
+                    "create_date": "2015-10-27T07:19:17.000Z",
+                    "update_date": "2015-10-27T07:19:17.000Z",
+                    "update_by": null,
+                    "desc_detail_update": null
+                }
+            ]
 
 ## Questions Collection [/questions]
 
